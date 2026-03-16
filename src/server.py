@@ -735,7 +735,7 @@ async def health(request):
 async def serve_frontend(request):
     """Serve the HTML frontend."""
     try:
-        html_path = Path(__file__).parent / 'static' / 'text_to_voice.html'
+        html_path = Path(__file__).parent.parent / 'static' / 'text_to_voice.html'
         with open(html_path, 'r', encoding='utf-8') as f:
             html_content = f.read()
         return web.Response(text=html_content, content_type='text/html')
@@ -746,7 +746,7 @@ async def serve_frontend(request):
 async def serve_voice_interface(request):
     """Serve the voice-to-voice HTML frontend."""
     try:
-        html_path = Path(__file__).parent / 'static' / 'voice_to_voice.html'
+        html_path = Path(__file__).parent.parent / 'static' / 'voice_to_voice.html'
         with open(html_path, 'r', encoding='utf-8') as f:
             html_content = f.read()
         return web.Response(text=html_content, content_type='text/html')

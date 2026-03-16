@@ -299,7 +299,7 @@
         let currentSessionId = null;
         
         // Initialize Socket.IO connection - use WebSocket only to prevent upgrade/disconnect
-        const socket = io('http://51.38.38.66:5001', {
+        const socket = io({
             transports: ['websocket'],  // Force WebSocket only - no polling upgrade
             reconnection: false,        // Don't auto-reconnect (creates new session)
             timeout: 60000,             // Connection timeout: 60 seconds
