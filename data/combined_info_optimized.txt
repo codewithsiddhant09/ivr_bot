@@ -1,0 +1,904 @@
+# TechGropse Knowledge Base
+
+Document Type: Company Knowledge Base
+Version: 2.0
+Effective Date: 2026-02-17
+Owner: TechGropse Pvt. Ltd.
+Scope: Company overview, services, projects, FAQs, privacy policy, and contact information
+
+---
+
+## 1. Overview
+
+TechGropse is a software development company founded in October 2025. TechGropse has completed 500+ projects with a team of 200+ professionals. TechGropse has offices in 3 countries (India, USA, UAE) and serves clients across 12+ countries. TechGropse specializes in mobile app development, AI solutions, web development, and enterprise software across industries including Healthcare, eCommerce, EdTech, Insurance, Real Estate, Gaming, Logistics, and more.
+
+---
+
+## 2. Definitions
+
+Employee: A full-time salaried individual working at TechGropse.
+Native Application: An app built for a single platform using platform-specific languages such as Swift for iOS or Kotlin for Android.
+Cross-Platform Application: An app built using frameworks such as Flutter or React Native that works on multiple platforms from one codebase.
+MVP (Minimum Viable Product): A version of a product with only the essential features required to validate a concept and gather user feedback.
+NDA (Non-Disclosure Agreement): A legal contract ensuring confidentiality of shared information between parties.
+RAG (Retrieval Augmented Generation): An AI technique that retrieves relevant documents before generating a response.
+API (Application Programming Interface): Software that enables communication between an application and external services.
+UI/UX: User Interface and User Experience design disciplines focused on how an application looks and feels to users.
+Backend: The server-side logic, databases, and infrastructure that power an application.
+TTS (Text-to-Speech): Technology that converts written text into spoken audio.
+LLM (Large Language Model): An AI model trained on large datasets to understand and generate natural language.
+
+---
+
+## 3. About Anup - TechGropse Virtual AI Assistant
+
+### Who is Anup?
+
+Anup is TechGropse's Virtual AI Assistant. Anup helps users learn about TechGropse services, projects, and capabilities. Anup answers questions about mobile app development, AI solutions, privacy policy, and company information. Anup can connect users with the TechGropse team when personalized assistance is needed.
+
+Q: Who are you?
+A: I am Anup, TechGropse's Virtual AI Assistant. I help you learn about TechGropse services, projects, and answer any questions you have about mobile app development, AI solutions, and our company.
+
+Q: What is your name?
+A: My name is Anup. I am TechGropse's virtual AI assistant.
+
+---
+
+### What Can Anup Do?
+
+Anup provides instant information about TechGropse services, projects, and capabilities. Anup guides users through the mobile app development process. Anup answers questions about privacy policy and company information. Anup connects users with the TechGropse team when personalized assistance is needed. Anup can assist through voice interface or text chat.
+
+Q: What can you help me with?
+A: I can answer questions about TechGropse services, explain our technology stack and development processes, share information about our projects, and connect you with our team when you need personalized assistance.
+
+---
+
+### When is Anup Available?
+
+Anup is available 24 hours a day, 7 days a week, 365 days a year. Anup provides instant response times with no waiting in queues. Anup is available through voice interface or text chat regardless of timezone.
+
+Q: Are you available 24/7?
+A: Yes, I am available 24 hours a day, 7 days a week, 365 days a year. I respond instantly with no waiting in queues.
+
+---
+
+### Can Anup Connect Users with Human Team Members?
+
+Yes. While Anup is an AI assistant, Anup can connect users with human team members anytime for personalized consultation, detailed technical discussions, or to start a project. Anup helps schedule calls with the right expert.
+
+Q: Can I talk to a real person?
+A: Absolutely! I can connect you with our human team members anytime you need personalized consultation, detailed technical discussions, or want to start a project. Just let me know, and I will help you schedule a call with the right expert.
+
+---
+
+## 4. Mobile App Development FAQs
+
+### What is the difference between native and cross-platform app development?
+
+Native applications are built for a single platform using languages such as Swift for iOS or Kotlin for Android. Native applications deliver high performance, full access to device features, and a superior user experience.
+
+Cross-platform applications are built using frameworks such as Flutter or React Native, enabling deployment on multiple platforms with one codebase. Cross-platform development reduces development time and cost, with minor performance limitations and restricted access to some native capabilities.
+
+Q: What is the difference between native and cross-platform app development?
+A: Native apps are built for one platform (Swift for iOS, Kotlin for Android) with high performance and full device access. Cross-platform apps use frameworks like Flutter or React Native to work on multiple platforms from one codebase, reducing time and cost with minor performance tradeoffs.
+
+---
+
+### How much does it cost to develop a mobile app?
+
+Cost varies based on complexity. A simple application costs $10,000 to $50,000. A medium complexity application costs $50,000 to $150,000. A complex application costs $200,000 or more.
+
+Key cost determinants include feature set, number of platforms, UI/UX complexity, backend requirements, integrations, and maintenance expectations.
+
+Q: How much does it cost to develop a mobile app?
+A: Cost depends on complexity. Simple apps cost $10,000–$50,000, medium complexity apps cost $50,000–$150,000, and complex apps cost $200,000 or more. Key factors include features, platforms, UI/UX complexity, backend, integrations, and maintenance.
+
+---
+
+### How long does it take to develop a mobile app?
+
+Timeframe depends on project scope. A simple application takes 2 to 3 months. A medium complexity application takes 4 to 6 months. A complex application takes 9 to 12 or more months.
+
+The timeline covers research, UI/UX design, development, testing, deployment, and post-launch support. TechGropse generally requires 3 to 9 or more months depending on project size and customization demands.
+
+Q: How long does it take to develop a mobile app?
+A: Simple apps take 2–3 months, medium apps take 4–6 months, and complex apps take 9–12+ months. TechGropse generally requires 3–9+ months depending on project size and customization.
+
+---
+
+### Should development target iOS, Android, or both?
+
+Platform selection depends on audience and budget. iOS has a strong presence in North America and Europe with higher spending patterns. Android has broader global reach across Asia, Africa, and Latin America. Both platforms can be targeted through cross-platform development. Native development for both platforms is preferred for maximum performance if budget supports it.
+
+Q: Should I build for iOS, Android, or both?
+A: It depends on your audience and budget. iOS is strong in North America and Europe. Android has broader global reach. Cross-platform frameworks like Flutter or React Native let you target both from one codebase. Native development for both is preferred if budget allows.
+
+---
+
+### What technology stack does TechGropse recommend for mobile apps?
+
+Frontend options include native development with Swift and Kotlin, or cross-platform development with Flutter and React Native.
+
+Backend options include Node.js, Python with Django, Flask, or FastAPI, and Java with Spring Boot.
+
+Database options include PostgreSQL, MySQL, MongoDB, Firebase, and DynamoDB.
+
+Cloud platform options include AWS, Google Cloud, and Microsoft Azure.
+
+Common API integrations include Stripe, PayPal, Razorpay, Firebase, Auth0, Twilio, and SendGrid.
+
+Q: What technology stack is recommended for mobile app development?
+A: We at TechGropse recommend Swift or Kotlin for native apps, Flutter or React Native for cross-platform. For backend, we use Node.js, Python, or Java. For databases, PostgreSQL, MongoDB, or Firebase. We deploy on AWS, Google Cloud, or Azure.
+
+---
+
+### How important is UI/UX design?
+
+UI/UX design plays a critical role. 88% of users avoid returning after a poor experience. High-quality design enhances retention and engagement, improves conversion rates, reduces rework expenses, strengthens product identity, and builds trust and credibility.
+
+Q: How important is UI/UX design for an app?
+A: Very important. 88% of users avoid returning after a poor experience. Good UI/UX enhances retention, improves conversion rates, reduces rework costs, and builds trust.
+
+---
+
+### What is an MVP and is it necessary?
+
+An MVP (Minimum Viable Product) includes only the essential features required to validate a concept. Advantages include lower initial investment, faster market entry, real-world user feedback, reduced risk, and iterative improvement based on usage data.
+
+Q: What is an MVP and should I build one?
+A: An MVP (Minimum Viable Product) is a version with only essential features to validate your concept. It reduces initial investment, gets you to market faster, provides real user feedback, and reduces risk. We at TechGropse recommend starting with an MVP for most projects.
+
+---
+
+### Is a backend required for a mobile app?
+
+A backend is required for applications involving user authentication, cloud storage, real-time updates, payment processing, analytics, or structured and updated content. Simple offline utilities do not require a backend. Serverless alternatives include Firebase and AWS Amplify.
+
+Q: Does my app need a backend?
+A: If your app involves user authentication, cloud storage, real-time updates, payments, or analytics, then yes. Simple offline utility apps do not need a backend. Serverless alternatives like Firebase and AWS Amplify are also options.
+
+---
+
+### What are APIs and why are they important?
+
+APIs enable communication between an application and external services. Common integrations include payment gateways like Stripe and PayPal, social authentication, maps and geolocation, push notifications, SMS and email services, KYC services, and weather or news APIs. APIs accelerate development and expand functionality.
+
+Q: What are APIs and why does my app need them?
+A: APIs allow your app to communicate with external services like payment gateways (Stripe, PayPal), social logins, maps, push notifications, and SMS/email services. They accelerate development and expand your app functionality.
+
+---
+
+### How can mobile app security be ensured?
+
+Core security practices include SSL/TLS encryption, OAuth 2.0 and JWT authentication, encryption of stored data, compliance with OWASP Mobile Security guidelines, secure session management, input validation, regular code audits, updated libraries and dependencies, backup strategies, and GDPR/CCPA compliance. Sensitive data should never be stored in plaintext.
+
+Q: How do you ensure mobile app security?
+A: We at TechGropse implement SSL/TLS encryption, OAuth 2.0/JWT authentication, encrypted data storage, OWASP compliance, regular code audits, and GDPR/CCPA compliance. Sensitive data is never stored in plaintext.
+
+---
+
+### How can a mobile app generate revenue?
+
+Common monetization models include in-app purchases, subscription plans, advertisements, freemium model, paid downloads, sponsorships, affiliate partnerships, and consent-based anonymized data monetization.
+
+Q: How can my app make money?
+A: Common monetization models include in-app purchases, subscriptions, ads, freemium model, paid downloads, sponsorships, and affiliate partnerships.
+
+---
+
+### What testing is required before releasing an app?
+
+Essential testing types include functional testing, usability testing, performance testing, security testing, compatibility testing, network condition testing, beta testing, and regression testing. Common tools include Appium, XCTest, and Espresso.
+
+Q: What testing is needed before launching an app?
+A: Essential tests include functional, usability, performance, security, compatibility, network, beta, and regression testing. Common tools used are Appium, XCTest, and Espresso.
+
+---
+
+### How is a mobile app published?
+
+For the iOS App Store, an Apple Developer account is required at $99 per year. The process involves preparing metadata and screenshots, uploading via App Store Connect, and app review which typically takes 1 to 3 days.
+
+For the Google Play Store, a Google Play Developer account is required at $25 one-time. The process involves uploading the app bundle, preparing the listing, and publication where review is often completed within hours.
+
+Q: How do I publish my app to the App Store and Google Play?
+A: For iOS, you need an Apple Developer account ($99/year), prepare metadata, upload via App Store Connect, and wait 1–3 days for review. For Google Play, you need a developer account ($25 one-time), upload the app bundle, and review is usually completed within hours.
+
+---
+
+### What kind of maintenance is required after launch?
+
+Ongoing maintenance typically includes OS version updates, bug fixes, security patches, performance optimization, feature enhancements, server and database upkeep, API updates, analytics monitoring, and user-related support tasks. Standard annual maintenance budgets are 15 to 20 percent of development cost.
+
+Q: What maintenance is needed after app launch?
+A: Ongoing maintenance includes OS updates, bug fixes, security patches, performance optimization, feature enhancements, server upkeep, and analytics monitoring. Standard annual budget is 15–20% of development cost.
+
+---
+
+### How can an app be scaled effectively?
+
+For infrastructure scaling, TechGropse recommends cloud hosting, auto-scaling, load balancing, and CDN.
+
+For database scaling, TechGropse recommends query optimization, replication, caching with Redis, and sharding.
+
+For architecture scaling, TechGropse recommends microservices, message queues, and rate limiting.
+
+For monitoring, TechGropse recommends logs, alerts, performance checks, and load testing.
+
+Q: How can my app scale as it grows?
+A: We at TechGropse recommend cloud hosting with auto-scaling, database optimization with Redis caching, microservices architecture, and comprehensive monitoring with logs and alerts.
+
+---
+
+## 5. TechGropse Company FAQs
+
+### Does TechGropse develop Android and iOS applications?
+
+Yes. TechGropse provides development services for both iOS and Android platforms, using both native and cross-platform approaches.
+
+Q: Does TechGropse develop Android and iOS apps?
+A: Yes, we at TechGropse develop for both iOS and Android using native (Swift, Kotlin) and cross-platform (Flutter, React Native) approaches.
+
+---
+
+### Does TechGropse build AI-based applications?
+
+Yes. TechGropse has more than 10 years of experience delivering AI-driven applications across industries. TechGropse has built 6 major AI-powered projects including SORISE, Mindleague, Passport Journeys, Saudi Enaya, Athlopolis, and Moonoa.
+
+Q: Does TechGropse build AI apps?
+A: Yes, we at TechGropse have 10+ years of experience delivering AI-driven applications. We have built 6 major AI-powered projects including SORISE, Mindleague, Moonoa, and others across education, gaming, healthcare, insurance, and sports.
+
+---
+
+### Can TechGropse customize applications?
+
+Yes. TechGropse tailors applications to match unique business needs. All solutions are customized based on client requirements.
+
+Q: Can TechGropse customize apps for my specific needs?
+A: Yes, we at TechGropse tailor all applications to match your unique business needs.
+
+---
+
+### Is an NDA required before starting a project?
+
+NDA signing is encouraged before initiating a project to ensure confidentiality of shared information between both parties.
+
+Q: Do I need to sign an NDA?
+A: NDA signing is encouraged before starting a project to ensure confidentiality of shared information.
+
+---
+
+### Which industries does TechGropse serve?
+
+TechGropse serves Healthcare, Insurance, Pharmaceuticals, eCommerce, Retail, Education, Gaming, Real Estate, Social Media, Automobile, Logistics, Procurement, and Event Management industries.
+
+Q: Which industries does TechGropse work with?
+A: We at TechGropse serve Healthcare, Insurance, eCommerce, Retail, Education, Gaming, Real Estate, Social Media, Automobile, Logistics, Procurement, and Event Management industries.
+
+---
+
+### Does TechGropse provide the source code?
+
+Yes. TechGropse provides the source code after project approval and completion.
+
+Q: Will I get the source code for my project?
+A: Yes, we at TechGropse provide the complete source code after project approval and completion.
+
+---
+
+### Does TechGropse support third-party integrations?
+
+Yes. TechGropse supports integration of APIs, payment gateways, CRM systems, ERP tools, cloud platforms, and AI/ML modules.
+
+Q: Does TechGropse support third-party integrations?
+A: Yes, we at TechGropse support integration of APIs, payment gateways, CRM systems, ERP tools, cloud platforms, and AI/ML modules.
+
+---
+
+### Is the project budget negotiable?
+
+Yes. TechGropse offers flexible pricing models for both agile development and financial planning.
+
+Q: Is the project budget negotiable?
+A: Yes, we at TechGropse offer flexible pricing models for both agile development and financial planning.
+
+---
+
+### What types of contracts does TechGropse offer?
+
+TechGropse offers both local and international contracts. Prices are higher on local contracts compared to international contracts.
+
+Q: What types of contracts does TechGropse offer?
+A: We at TechGropse offer both local and international contracts. Pricing varies between the two, with local contracts having higher rates.
+
+---
+
+### Does TechGropse support compliance requirements?
+
+Yes. TechGropse supports all compliance requirements.
+
+Q: Does TechGropse support compliance?
+A: Yes, we at TechGropse support all compliance requirements.
+
+---
+
+## 6. TechGropse Team and Roles
+
+### How large is the TechGropse team?
+
+TechGropse has a workforce of 150 to 200 skilled professionals dedicated to delivering exceptional digital solutions.
+
+Q: How large is the TechGropse team?
+A: We at TechGropse have 150–200 skilled professionals dedicated to delivering exceptional digital solutions.
+
+---
+
+### What roles make up the TechGropse team?
+
+The TechGropse team includes the following roles. CTO. Technical Architect. Delivery Manager. Product Manager. Project Manager. Business Analyst. UI/UX Designers. Lead Software Engineer. Software Engineers. Lead QA. QA. DevOps and Cloud Team.
+
+The development teams include Backend Developers with expertise in Node.js, Python, Java, and scalable server-side architecture. Frontend Developers who specialize in React, Angular, Vue.js, and modern web interfaces. Full Stack Developers with end-to-end development capabilities. AI Engineers who implement machine learning, deep learning, and artificial intelligence solutions.
+
+The design and user experience team includes UI/UX Designers creating intuitive, visually appealing, and user-centric interfaces.
+
+The architecture and strategy team includes Software Architects for system design and technology selection, Business Analysts for requirements gathering and process optimization, and Data Analysts for data-driven insights and business intelligence.
+
+The project delivery team includes Project Managers using agile methodology and Quality Analysts for comprehensive testing and quality assurance.
+
+Q: What kind of team does TechGropse have?
+A: We at TechGropse have a cross-functional team including Backend, Frontend, and Full Stack Developers, AI Engineers, UI/UX Designers, Software Architects, Business Analysts, Project Managers, and QA professionals. Our team uses agile practices and has 10+ years of collective industry experience.
+
+---
+
+## 7. TechGropse Technology Stack
+
+### What mobile app technologies does TechGropse use?
+
+TechGropse uses React Native, Flutter, Kotlin, and Swift for mobile app development.
+
+Q: What mobile technologies does TechGropse use?
+A: We at TechGropse use React Native and Flutter for cross-platform development, and Kotlin and Swift for native Android and iOS development.
+
+---
+
+### What backend technologies does TechGropse use?
+
+TechGropse uses Node.js, Java, Python, C++, PHP, and Docker for backend API and microservices development.
+
+Q: What backend technologies does TechGropse use?
+A: We at TechGropse use Node.js, Java, Python, C++, PHP, and Docker for backend and microservices.
+
+---
+
+### What databases does TechGropse use?
+
+TechGropse uses MongoDB, PostgreSQL, DynamoDB, MySQL, ChromaDB, and Pinecone.
+
+Q: What databases does TechGropse use?
+A: We at TechGropse use MongoDB, PostgreSQL, DynamoDB, MySQL, ChromaDB, and Pinecone depending on project requirements.
+
+---
+
+### What web technologies does TechGropse use?
+
+TechGropse uses HTML5, React.js, Next.js, and Bootstrap for web development.
+
+Q: What web technologies does TechGropse use?
+A: We at TechGropse use HTML5, React.js, Next.js, and Bootstrap for web development.
+
+---
+
+### What CI/CD and cloud services does TechGropse use?
+
+TechGropse uses Bitbucket, GitHub, and Jenkins for CI/CD pipeline. TechGropse uses Amazon Web Services (AWS) and Microsoft Azure for cloud services.
+
+Q: What CI/CD and cloud services does TechGropse use?
+A: We at TechGropse use Bitbucket, GitHub, and Jenkins for CI/CD. We deploy on Amazon Web Services (AWS) and Microsoft Azure.
+
+---
+
+### What LLMs does TechGropse use?
+
+TechGropse uses OpenAI for research purposes, DeepSeek for research purposes, Claude for coding purposes, and Gemini for research and multimedia processing.
+
+Q: What AI/LLM models does TechGropse work with?
+A: We at TechGropse use OpenAI for research, DeepSeek for research, Claude for coding, and Gemini for research and multimedia processing.
+
+---
+
+## 8. TechGropse Projects Portfolio
+
+TechGropse has delivered 500+ innovative solutions across various technology domains. The portfolio includes 19 major projects spanning AI/ML, eCommerce, Healthcare, EdTech, Real Estate, Social Media, Logistics, Event Management, Gaming, Automobile, and Procurement.
+
+Q: How many projects has TechGropse completed?
+A: We at TechGropse have delivered 500+ projects total, including 19 major projects across AI/ML, eCommerce, Healthcare, EdTech, Real Estate, and more.
+
+---
+
+### SORISE
+
+Industry: Education. Complexity: Medium. Region: GCC.
+
+SORISE is an AI-powered EdTech platform built to enhance student engagement across the GCC. TechGropse developed a scalable mobile app leveraging AI-driven personalization, real-time analytics, and smart evaluations. This resulted in boosting engagement, reducing operational costs, and significantly enhancing learning outcomes.
+
+Key features include AI-powered assessment automation, personalized learning paths, real-time analytics, and student progress tracking.
+
+Q: What is the SORISE project?
+A: SORISE is an AI-powered EdTech platform we built for the GCC region. It features AI-driven personalization, real-time analytics, and smart evaluations to enhance student engagement and learning outcomes.
+
+---
+
+### Mindleague
+
+Industry: Gaming. Complexity: High. Region: USA.
+
+Mindleague is a high-complexity AI-powered chess gaming platform designed to drive engagement in a competitive market. This intelligent gaming app merges tradition with cutting-edge technology, catering to players of all levels from novices to grandmasters. It has resulted in an average 20-minute engagement time per session.
+
+Key features include AI-powered chess training, virtual and in-person match coordination, skill-based player matching, tournament organization, and advanced analytics.
+
+Q: What is the Mindleague project?
+A: Mindleague is a high-complexity AI-powered chess gaming platform we built for the USA market. It features AI chess training, skill-based matchmaking, tournament organization, and achieves 20-minute average engagement per session.
+
+---
+
+### Passport Journeys
+
+Industry: Healthcare and Mental Health. Complexity: Low. Region: USA.
+
+Passport Journeys is a wellness-focused mobile app built to strengthen emotional bonds between mothers and daughters aged 14 and older. TechGropse developed a secure, cross-platform solution with guided video sessions and progress tracking, resulting in substantial increase in engagement, higher session bookings, and improved retention.
+
+Key features include licensed clinician matching, guided relationship exercises, progress tracking, private communication, and personalized goals.
+
+Q: What is the Passport Journeys project?
+A: Passport Journeys is a wellness app we built to strengthen emotional bonds between mothers and daughters. It features licensed clinician matching, guided exercises, progress tracking, and private communication.
+
+---
+
+### Saudi Enaya
+
+Industry: Insurance. Complexity: Medium. Region: Saudi Arabia.
+
+Saudi Enaya is a robust AI-enabled health insurance app developed to enhance customer engagement and operational efficiency. TechGropse delivered a mobile solution featuring AI chatbots, seamless policy management, and 24/7 support resulting in faster claim processing and customer satisfaction.
+
+Key features include AI-powered policy recommendations, streamlined claims management, digital-first experience, and 24/7 customer support.
+
+Q: What is the Saudi Enaya project?
+A: Saudi Enaya is an AI-enabled health insurance app we built for Saudi Arabia. It features AI-powered policy recommendations, streamlined claims management, and 24/7 customer support.
+
+---
+
+### Athlopolis
+
+Industry: Sports and Recreation. Complexity: Medium. Region: Greece and Europe.
+
+Athlopolis is a smart, cross-platform padel sports application connecting players, venues, and communities through seamless booking and matchmaking. TechGropse developed a scalable, AI-powered solution with secure payments and real-time scheduling across European markets.
+
+Key features include AI-based player matching, real-time court booking, tournament management, performance analytics, and venue discovery.
+
+Q: What is the Athlopolis project?
+A: Athlopolis is a smart padel sports app we built for the European market. It features AI-based player matching, real-time court booking, tournament management, and performance analytics.
+
+---
+
+### Moonoa
+
+Industry: Healthcare and Sleep Science. Complexity: High. Region: Spain and Europe.
+
+Moonoa is an AI-powered sleep tracking app designed to enhance sleep quality and well-being. Developed with Harvard doctors, psychologists, and sleep experts, TechGropse created a scalable, cross-platform solution integrating personalized coaching, real-time analytics, and wearable data.
+
+Key features include AI-powered sleep coaching, expert-designed programs, personalized habit recommendations, science-backed techniques, and daily micro-lessons.
+
+Q: What is the Moonoa project?
+A: Moonoa is an AI-powered sleep tracking app we built with Harvard doctors and sleep experts. It features personalized sleep coaching, real-time analytics, wearable data integration, and science-backed techniques.
+
+---
+
+### Star Importers
+
+Industry: Wholesale eCommerce. Complexity: Low. Region: USA.
+
+Star Importers is an America-based wholesale eCommerce platform modernized through a cross-platform mobile app. The solution streamlined ordering, payments, and logistics while enabling mobile-first access. Post-launch achieved sales uplift, user growth, and faster checkouts.
+
+Key features include real-time inventory management, supplier integration, AI-powered demand forecasting, automated order processing, and B2B marketplace.
+
+Q: What is the Star Importers project?
+A: Star Importers is a wholesale B2B eCommerce platform we modernized for the USA market. It features real-time inventory management, AI-powered demand forecasting, and automated order processing.
+
+---
+
+### MISD
+
+Industry: Fashion eCommerce. Complexity: Low. Region: Saudi Arabia.
+
+MISD is a KSA-based AI-powered eCommerce platform transforming a multi-vendor fashion marketplace into a scalable mobile experience. The cross-platform app enables personalized shopping, secure payments, and intelligent recommendations.
+
+Key features include AI-powered style recommendations, product customization, virtual try-on, personalized shopping, and trend forecasting.
+
+Q: What is the MISD project?
+A: MISD is an AI-powered fashion eCommerce platform we built for Saudi Arabia. It features AI style recommendations, virtual try-on, personalized shopping, and trend forecasting.
+
+---
+
+### Bianca
+
+Industry: eCommerce. Complexity: High. Region: Kuwait.
+
+Bianca is a high-complexity eCommerce platform developed for the Kuwait market, providing a seamless online shopping experience with advanced features and secure transactions.
+
+Key features include advanced eCommerce features, secure transactions, and seamless shopping experience.
+
+Q: What is the Bianca project?
+A: Bianca is a high-complexity eCommerce platform we built for the Kuwait market with advanced features and secure transactions.
+
+---
+
+### FALCON
+
+Industry: eCommerce and Marketplace. Complexity: High. Region: UAE.
+
+FALCON is a UAE-based eCommerce platform transformed through TechGropse digital solutions. TechGropse developed a robust mobile app and website with AI-powered chatbots, automated inventory management, and real-time order tracking.
+
+Key features include AI-powered chatbots, automated inventory management, real-time order tracking, and higher customer retention.
+
+Q: What is the FALCON project?
+A: FALCON is a UAE-based eCommerce platform we built with AI-powered chatbots, automated inventory management, and real-time order tracking.
+
+---
+
+### cars.iq
+
+Industry: Automobile Marketplace. Complexity: Medium. Region: Iraq.
+
+cars.iq is an automobile marketplace platform connecting buyers and sellers in the automotive industry with intelligent search and listing features.
+
+Key features include intelligent search, vehicle listings, and buyer-seller connection.
+
+Q: What is the cars.iq project?
+A: cars.iq is an automobile marketplace we built for Iraq connecting buyers and sellers with intelligent search and listing features.
+
+---
+
+### Sofrati
+
+Industry: Event Management. Complexity: Low. Region: Saudi Arabia.
+
+Sofrati is a Saudi-based AI-powered service booking platform built to simplify large-scale event management. TechGropse developed this secure, cross-platform mobile app with intelligent search, location-based vendor matching, and in-app payments.
+
+Key features include multi-vendor booking, AI-powered vendor recommendations, bulk service reservations, real-time availability, and integrated payments.
+
+Q: What is the Sofrati project?
+A: Sofrati is an AI-powered event management platform we built for Saudi Arabia. It features multi-vendor booking, AI-powered vendor recommendations, and real-time availability.
+
+---
+
+### Anasa
+
+Industry: Event Management. Complexity: Low. Region: Saudi Arabia.
+
+Anasa is a B2B and B2C marketplace app developed to simplify event services and vendor bookings across the GCC. The scalable, secure platform streamlined multi-vendor operations and enhanced user experience.
+
+Key features include comprehensive service marketplace, flexible booking options, AI-assisted vendor selection, and real-time booking management.
+
+Q: What is the Anasa project?
+A: Anasa is a B2B and B2C event services marketplace we built for the GCC region. It features AI-assisted vendor selection, flexible booking, and real-time booking management.
+
+---
+
+### Verento
+
+Industry: Real Estate. Complexity: High. Region: UAE.
+
+Verento is an AI-powered real estate mobile app developed to streamline property rentals in the UAE. TechGropse delivered a cross-platform solution with AI-driven property matching, move-in and move-out inspections, and digital inventory management.
+
+Key features include AI-driven property matching, digital inventory management, move-in and move-out inspections, and tenant satisfaction features.
+
+Q: What is the Verento project?
+A: Verento is an AI-powered real estate app we built for the UAE. It features AI-driven property matching, digital inventory management, and move-in/move-out inspections.
+
+---
+
+### LUMO
+
+Industry: Social Media. Complexity: Medium. Region: Saudi Arabia.
+
+LUMO is a social media platform developed for the Saudi Arabian market, enabling users to connect, share, and engage through modern social networking features.
+
+Key features include modern social networking, user engagement features, and content sharing.
+
+Q: What is the LUMO project?
+A: LUMO is a social media platform we built for the Saudi Arabian market with modern social networking and user engagement features.
+
+---
+
+### Naqla
+
+Industry: Logistics. Complexity: Medium. Region: Middle East.
+
+Naqla is a logistics platform streamlining transportation and delivery operations with real-time tracking and efficient route management.
+
+Key features include real-time tracking, route management, and delivery operations optimization.
+
+Q: What is the Naqla project?
+A: Naqla is a logistics platform we built for the Middle East with real-time tracking and efficient route management.
+
+---
+
+### Motozite
+
+Industry: Automobile. Complexity: Low. Region: Middle East.
+
+Motozite is an automobile platform providing automotive services and marketplace features for vehicle enthusiasts.
+
+Key features include automotive services, marketplace features, and vehicle enthusiast community.
+
+Q: What is the Motozite project?
+A: Motozite is an automobile marketplace and services platform we built for the Middle East.
+
+---
+
+### Vexors
+
+Industry: Procurement. Complexity: High. Region: Middle East.
+
+Vexors is a high-complexity procurement platform enabling businesses to manage their procurement processes efficiently with advanced vendor management and ordering capabilities.
+
+Key features include vendor management, ordering capabilities, and procurement process automation.
+
+Q: What is the Vexors project?
+A: Vexors is a high-complexity procurement platform we built for the Middle East with advanced vendor management and procurement automation.
+
+---
+
+### Zayed University
+
+Industry: EdTech. Complexity: Low. Region: UAE.
+
+Zayed University mobile app was modernized by TechGropse to enhance student engagement and operational efficiency. The revamped app features AI-powered chatbots, gamification, and streamlined enrollment.
+
+Key features include AI-powered chatbots, gamification, streamlined enrollment, and improved retention.
+
+Q: What is the Zayed University project?
+A: We at TechGropse modernized the Zayed University mobile app with AI-powered chatbots, gamification, and streamlined enrollment to improve student engagement.
+
+---
+
+### Project Statistics Summary
+
+TechGropse has delivered 19 major projects out of 500+ total projects. 7 projects are high complexity including Mindleague, Moonoa, Verento, Bianca, FALCON, and Vexors. 6 projects are medium complexity including SORISE, Saudi Enaya, Athlopolis, LUMO, cars.iq, and Naqla. 6 projects are low complexity including Passport Journeys, Star Importers, MISD, Sofrati, Anasa, Motozite, and Zayed University.
+
+Industries covered include EdTech (SORISE, Zayed University), Healthcare (Passport Journeys, Moonoa, Saudi Enaya), Gaming (Mindleague), eCommerce (Star Importers, MISD, Bianca, FALCON), Event Management (Sofrati, Anasa), Real Estate (Verento), Social Media (LUMO), Automobile (cars.iq, Motozite), Logistics (Naqla), Procurement (Vexors), and Sports (Athlopolis).
+
+Regions served include MENA/GCC covering Saudi Arabia, UAE, Kuwait, and Bahrain. North America covering USA. Europe covering Spain, Greece, Luxembourg, and UK. APAC covering India and Japan.
+
+Q: What AI projects has TechGropse built?
+A: We at TechGropse have built 6 AI-powered projects: SORISE (EdTech), Mindleague (Gaming), Passport Journeys (Healthcare), Saudi Enaya (Insurance), Athlopolis (Sports), and Moonoa (Sleep Science).
+
+Q: What eCommerce solutions does TechGropse offer?
+A: We at TechGropse have built eCommerce solutions including Star Importers (B2B wholesale), MISD (fashion), Bianca (Kuwait market), and FALCON (UAE marketplace).
+
+Q: Does TechGropse build event management platforms?
+A: Yes, we at TechGropse have built Sofrati and Anasa, both event management platforms for the Saudi Arabian and GCC markets.
+
+Q: What industries does TechGropse work in?
+A: We at TechGropse work across EdTech, Healthcare, Gaming, eCommerce, Events, Real Estate, Social Media, Automobile, Logistics, Procurement, and Sports.
+
+Q: What regions does TechGropse serve?
+A: We at TechGropse serve clients across MENA/GCC (Saudi Arabia, UAE, Kuwait, Bahrain), North America (USA), Europe (Spain, Greece, UK, Luxembourg), and APAC (India, Japan).
+
+---
+
+## 9. TechGropse Customers
+
+TechGropse has worked with 31+ clients across multiple regions worldwide.
+
+### Customers in APAC (Asia-Pacific) Region
+
+TechGropse has 3 customers in the APAC region. Kotak Zurich (India) in Insurance and Financial Services. mcaffine (India) in Consumer Products. Pigeon (Japan) in Consumer Products.
+
+---
+
+### Customers in North America Region
+
+TechGropse has 6 customers in North America. Pizza Hut (USA) in Food and Beverage. Best Buy (USA) in Retail and Electronics. Mindleague (USA) in Gaming and EdTech. Travelers (USA) in Insurance. Walmart (USA) in Retail. Star Importers (USA) in Wholesale and eCommerce.
+
+---
+
+### Customers in Europe Region
+
+TechGropse has 6 customers in Europe. Clarks (UK) in Footwear and Retail. Athlopolis (Greece) in Sports and Recreation. Udemy (USA/Europe) in EdTech. Moonoa (Spain) in Healthcare and Sleep Tech. Fiveapp (UK) in Technology. Checkmath (Luxembourg) in EdTech.
+
+---
+
+### Customers in MENA/GCC Region
+
+TechGropse has 16 customers in the MENA/GCC region. Zayed University (UAE) in Education. SORISE (UAE) in EdTech. FALCON (UAE) in eCommerce. Verento (UAE) in Real Estate. Noon (UAE) in eCommerce. Anasa (Saudi Arabia) in Event Management. MISD (Saudi Arabia) in Fashion eCommerce. Petro Rabigh (Saudi Arabia) in Oil and Gas. Yousef Akbar (Saudi Arabia) in Business. LUMO (Saudi Arabia) in Social Media. Air Liquide (Saudi Arabia) in Industrial. Bahrain Taxi (Bahrain) in Transportation. Bayut Bahrain (Bahrain) in Real Estate. MedGulf Insurance (Lebanon) in Insurance. Bianca (Kuwait) in eCommerce. King Khalid (Saudi Arabia) in Healthcare.
+
+---
+
+### Customer Summary
+
+Total customers: 31+. Countries where clients are located: USA, UK, India, Japan, Greece, Spain, Luxembourg, UAE, Saudi Arabia, Bahrain, Lebanon, Kuwait (12+ countries). Industries: Retail, Insurance, EdTech, Healthcare, eCommerce, Real Estate, Transportation, Oil and Gas, Gaming, Food and Beverage, Consumer Products.
+
+Note: TechGropse has offices in only 3 countries (India, USA, UAE) but serves clients globally across 12+ countries.
+
+Q: Who are TechGropse customers?
+A: We at TechGropse work with 31+ global customers including Pizza Hut, Best Buy, Walmart, Noon, Zayed University, FALCON, Moonoa, and many more across retail, healthcare, education, and technology sectors.
+
+Q: Does TechGropse work with companies in the USA?
+A: Yes, we at TechGropse have 6 customers in North America including Pizza Hut, Best Buy, Walmart, Mindleague, Travelers, and Star Importers.
+
+Q: Does TechGropse work with companies in the Middle East/GCC?
+A: Yes, we at TechGropse have 16 customers in the MENA/GCC region including Zayed University, SORISE, FALCON, Noon, Verento, and many more in UAE, Saudi Arabia, Bahrain, Lebanon, and Kuwait.
+
+Q: Does TechGropse work with companies in Europe?
+A: Yes, we at TechGropse have 6 customers in Europe including Clarks (UK), Athlopolis (Greece), Moonoa (Spain), Fiveapp (UK), Checkmath (Luxembourg), and Udemy.
+
+Q: Does TechGropse work with companies in India?
+A: Yes, we at TechGropse have customers in India including Kotak Zurich and mcaffine.
+
+Q: What industries do TechGropse customers come from?
+A: We at TechGropse serve customers across Retail, Insurance, EdTech, Healthcare, eCommerce, Real Estate, Transportation, Oil and Gas, Gaming, Food and Beverage, and Consumer Products industries.
+
+---
+
+## 10. HR and Careers
+
+### What positions are currently open at TechGropse?
+
+Available roles are listed on the TechGropse Career Page at https://www.techgropse.com/career.
+
+Q: What positions are open at TechGropse?
+A: Available roles are listed on our Career Page at https://www.techgropse.com/career.
+
+---
+
+### How can a resume be submitted to TechGropse?
+
+Resumes can be uploaded through the Career Page at https://www.techgropse.com/career or emailed to hr@techgropse.com.
+
+Q: How do I apply for a job at TechGropse?
+A: You can upload your resume through our Career Page at https://www.techgropse.com/career or email it to hr@techgropse.com.
+
+---
+
+### What is the salary structure for app developers at TechGropse?
+
+Salary-related questions can be sent to hr@techgropse.com.
+
+Q: What is the salary for developers at TechGropse?
+A: For salary-related questions, please reach out to hr@techgropse.com.
+
+---
+
+### Are training programs offered at TechGropse?
+
+Training program information is available via hr@techgropse.com.
+
+Q: Does TechGropse offer training programs?
+A: For information about training programs, please contact hr@techgropse.com.
+
+---
+
+### What kind of work environment does TechGropse offer?
+
+TechGropse offers a collaborative, inclusive, and innovation-driven work environment with open office spaces, quiet zones, modern meeting rooms, breakout areas, and a fully equipped kitchen. The overall atmosphere is relaxed yet productive.
+
+Q: What is the work environment like at TechGropse?
+A: We at TechGropse offer a collaborative, inclusive, and innovation-driven environment with open offices, quiet zones, modern meeting rooms, and breakout areas. The atmosphere is relaxed yet productive.
+
+---
+
+### Are team-building activities conducted at TechGropse?
+
+Yes. TechGropse conducts monthly lunches, quarterly outings, yearly retreats, hackathons, game nights, sports events, volunteer programs, and virtual sessions.
+
+Q: Does TechGropse have team-building activities?
+A: Yes, we at TechGropse conduct monthly lunches, quarterly outings, yearly retreats, hackathons, game nights, sports events, and volunteer programs.
+
+---
+
+## 11. Privacy Policy
+
+### Overview of TechGropse Privacy Policy
+
+This section outlines the collection, usage, and handling of personal data strictly for online interactions at TechGropse. Offline data collection is not covered by this policy. This policy may be updated periodically.
+
+---
+
+### Consent
+
+Use of the TechGropse website signifies acceptance of this Privacy Policy.
+
+Q: How does TechGropse handle consent?
+A: By using the TechGropse website, you signify your acceptance of our Privacy Policy.
+
+---
+
+### What Information Does TechGropse Collect?
+
+TechGropse may collect name, email address, phone number, company name, address, inquiry message, and attachments. Information may be disclosed to regulatory authorities when legally required.
+
+Q: What personal information does TechGropse collect?
+A: We at TechGropse may collect your name, email address, phone number, company name, address, and inquiry message. Information is only disclosed to regulatory authorities when legally required.
+
+---
+
+### How Does TechGropse Use Collected Data?
+
+Collected data is used to operate and enhance the website, customize user interaction, analyze visitor behavior, improve services and features, communicate updates, support responses, and promotional information, and detect and prevent fraudulent activity.
+
+Q: How does TechGropse use my data?
+A: We use your data to operate and enhance our website, customize your experience, analyze visitor behavior, improve our services, communicate updates and support responses, and prevent fraud.
+
+---
+
+### What Log File Data Does TechGropse Collect?
+
+Automatically collected data includes IP address, browser type, internet service provider, date and time stamps, referrer URLs, and click counts. This information is not linked to personal identity.
+
+---
+
+### How Does TechGropse Use Cookies?
+
+TechGropse uses cookies to store preferences, track page interactions, and improve website personalization. Types of cookies used include essential session cookies, policy consent cookies, and functionality cookies. Cookie settings can be adjusted through browser configuration.
+
+Q: Does TechGropse use cookies?
+A: Yes, we use essential session cookies, policy consent cookies, and functionality cookies to store preferences and improve your experience. You can adjust cookie settings through your browser.
+
+---
+
+### How Does TechGropse Protect Information?
+
+TechGropse implements industry-standard security measures including SSL encryption for supported browsers.
+
+---
+
+### Does TechGropse Share Personal Data?
+
+TechGropse does not sell or share personal data with unrelated third parties. Trusted partners may assist with marketing, analytics, communication, or technical support under confidentiality agreements.
+
+Q: Does TechGropse sell or share my data?
+A: No, we at TechGropse do not sell or share personal data with unrelated third parties. Trusted partners may assist under confidentiality agreements.
+
+---
+
+### Third-Party Links
+
+TechGropse is not responsible for privacy policies or content on external websites.
+
+---
+
+### Children Privacy Policy
+
+TechGropse does not knowingly collect data from individuals under 13 years of age. Requests for removal of such data can be submitted using the contact details provided.
+
+---
+
+### Policy Revisions
+
+TechGropse Privacy Policy terms may be updated at any time. Regular review is recommended.
+
+---
+
+## 12. TechGropse Contact Information
+
+### Where are TechGropse offices located?
+
+TechGropse has 3 offices in 3 countries.
+
+India Office: G-02 127, C Block, Sector 63, Noida, Uttar Pradesh 201309, India. Phone: +91-9911138726. Email: info@techgropse.com.
+
+United States Office: 1135 Pasadena Ave S, South Pasadena, FL 33707, United States. Phone: +1-2673274760. Email: info@techgropse.com.
+
+United Arab Emirates Office: Al Owais building, Office 307, Deira, Dubai, United Arab Emirates. Phone: +971-527984766. Email: info@techgropse.com.
+
+Q: Where are TechGropse offices located?
+A: We at TechGropse have 3 offices. India: Noida, Uttar Pradesh (+91-9911138726). USA: South Pasadena, FL (+1-2673274760). UAE: Deira, Dubai (+971-527984766). Email: info@techgropse.com.
+
+Q: In how many countries does TechGropse have offices?
+A: We at TechGropse have offices in 3 countries: India, USA, and UAE. However, we serve clients across 12+ countries including USA, UK, India, Japan, Greece, Spain, Luxembourg, UAE, Saudi Arabia, Bahrain, Lebanon, and Kuwait.
+
+Q: How can I contact TechGropse?
+A: You can reach us at info@techgropse.com. Our India office phone is +91-9911138726, USA office is +1-2673274760, and UAE office is +971-527984766.
+
+---

@@ -1,0 +1,190 @@
+# **Privacy Policy**
+
+## **Transparency Regarding the Use of Personal Data**
+
+This Privacy Policy describes how we collect, use, and handle your personal information when you use our website and services.
+
+This policy applies **only to our online activities** and is valid for visitors to our website regarding the information they share and/or collect on this website. It does **not** apply to any information collected offline or through other channels.
+
+We may update this policy from time to time. Please review it regularly to understand how we collect, use, protect, and handle your personally identifiable information (PII).
+
+---
+
+## **Consent**
+
+By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+
+---
+
+## **Information We Collect**
+
+The personal information you are asked to provide and the reasons for requesting it will be clearly stated at the time of collection.
+
+If you contact us directly, we may collect additional details such as:
+
+* Your name
+* Email address
+* Phone number
+* Message content and/or attachments you send
+
+When you register or make an inquiry, we may also collect:
+
+* Name
+* Company name
+* Address
+* Email address
+* Telephone number
+
+We reserve the right to disclose your information to legal or regulatory bodies as required for compliance.
+
+---
+
+## **How We Use Your Information**
+
+We use the information we collect to:
+
+* Provide, operate, and maintain our website
+* Improve, personalize, and expand our website
+* Understand and analyze how you use our website
+* Develop new products, services, and features
+* Communicate with you directly or via email (for updates, customer service, marketing, or promotions)
+* Send periodic emails
+* Detect and prevent potential fraud related to our brand
+
+---
+
+## **Use of Log Files**
+
+Techgropse.com follows a standard log file procedure. These files record visitors when they access the website.
+
+Information collected includes:
+
+* Internet Protocol (IP) addresses
+* Browser type
+* Internet Service Provider (ISP)
+* Date and time stamps
+* Referring/exit pages
+* Number of clicks
+
+These details are **not linked** to personally identifiable information and are used to analyze trends, administer the site, and gather demographic data.
+
+---
+
+## **Use of Cookies**
+
+Cookies are small text files placed on your device by a website. They help us identify returning visitors and improve user experience.
+
+Like many websites, Techgropse.com uses cookies to:
+
+* Store visitor preferences
+* Track accessed or visited pages
+* Customize web page content based on browser type or other data
+
+### **Types of Cookies We Use**
+
+#### **A. Necessary / Essential Cookies**
+
+* **Type:** Session Cookies
+* **Administered by:** Us
+* **Purpose:** Enable website functionality, authenticate users, and prevent fraudulent activity.
+
+#### **B. Cookies Policy / Notice Acceptance Cookies**
+
+* **Type:** Persistent Cookies
+* **Administered by:** Us
+* **Purpose:** Identify if users have accepted the use of cookies.
+
+#### **C. Functionality Cookies**
+
+* **Type:** Persistent Cookies
+* **Administered by:** Us
+* **Purpose:** Remember user preferences such as login details or language settings for a more personalized experience.
+
+Users can disable cookies through their browser settings. For more details, refer to your browser’s documentation.
+
+---
+
+## **Information Security**
+
+We employ industry-standard security measures to protect your data from loss, misuse, and unauthorized access.
+
+When accessed via modern browsers (e.g., Internet Explorer 11 or higher), our site uses **Secure Socket Layer (SSL)** encryption for server authentication and data protection.
+
+---
+
+## **Data Disclosure**
+
+TechGropse **does not sell, share, or distribute** your personal data to third parties.
+
+However, we may engage trusted partners or companies to perform services on our behalf, such as:
+
+* Marketing
+* Email or postal communications
+* Data analysis
+* Customer support
+
+These partners have limited access to your information and are prohibited from using it for any other purpose.
+
+---
+
+## **Third-Party Links or Websites**
+
+Our website may contain links to third-party sites.
+Please note that TechGropse is **not responsible** for the privacy practices, content, or policies of these external sites.
+
+We encourage you to review the privacy policies of every website you visit, as this policy applies **only** to our website.
+
+---
+
+## **Children’s Information**
+
+We prioritize the protection of children online.
+
+TechGropse does **not knowingly** collect any personally identifiable information from children under 13 years old.
+If you believe your child has provided such data, please contact us immediately, and we will remove it from our records.
+
+---
+
+## **Changes to This Privacy Policy**
+
+We reserve the right to update this Privacy Policy at any time without prior notice.
+
+Please check this page periodically to stay informed about our current practices.
+We remain committed to protecting your privacy at all times.
+
+---
+
+## **Interpretation and Definitions**
+
+### **Interpretation**
+
+Words with capitalized initials have meanings defined in the following section. These definitions apply equally whether used in the singular or plural form.
+
+### **Definitions**
+
+* **You:** The individual or entity using the service.
+* **Company / We / Us / Our:** TechGropse Pvt. Ltd., H 146/147, Sector 63, Noida, 201307.
+* **Affiliate:** An entity that controls or is controlled by the Company (ownership ≥ 50%).
+* **Account:** A unique account created to access our services.
+* **Website:** [https://www.techgropse.com/](https://www.techgropse.com/)
+* **Service:** Refers to the Website.
+* **Country:** Uttar Pradesh, India.
+* **Service Provider:** Any third party or individual processing data on behalf of the Company.
+* **Third-Party Social Media Service:** Any platform through which a user can log in or register.
+* **Personal Data:** Information related to an identified or identifiable person.
+* **Cookies:** Small data files stored on your device that track browsing history.
+* **Usage Data:** Information collected automatically, such as page visit duration.
+
+---
+
+## **Contact Information**
+
+If you have any questions about this Privacy Policy, please contact us:
+
+**Address:**
+G-02 Block, D 60, D Block, Sector 63, Noida, Uttar Pradesh 201301, India
+
+**Telephone:** +91-9911138726
+**Email:** [sales@techgropse.com](mailto:sales@techgropse.com)
+
+---

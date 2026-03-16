@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGropse Virtual Representative</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .chat-area {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            height: 400px;
+            overflow-y: auto;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .user-message {
+            background-color: #007bff;
+            color: white;
+            margin-left: 20%;
+        }
+
+        .bot-message {
+            background-color: #e9ecef;
+            color: #333;
+            margin-right: 20%;
+        }
+
+        .status-message {
+            background-color: #fff3cd;
+            color: #856404;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+
+        #messageInput {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #sendButton {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #sendButton:hover {
+            background-color: #0056b3;
+        }
+
+        #sendButton:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .audio-controls {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .audio-status {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .audio-playing {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .connection-status {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .connected {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .disconnected {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎤 TechGropse Virtual Representative</h1>
+
+        <div id="connectionStatus" class="connection-status disconnected">
+            Connecting...
+        </div>
+
+        <div id="chatArea" class="chat-area">
+            <div class="message status-message">
+                Welcome! Connecting to the assistant...
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="messageInput" placeholder="Type your question about privacy policy..." disabled>
+            <button id="sendButton" disabled>Send</button>
+        </div>
+
+        <div class="audio-controls">
+            <div id="audioStatus" class="audio-status" style="display: none;"></div>
+            <audio id="audioPlayer" controls style="display: none;"></audio>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Socket.IO connection
+        const socket = io('http://0.0.0.0:5000');
+
+        // DOM elements
+        const chatArea = document.getElementById('chatArea');
+        const messageInput = document.getElementById('messageInput');
+        const sendButton = document.getElementById('sendButton');
+        const connectionStatus = document.getElementById('connectionStatus');
+        const audioStatus = document.getElementById('audioStatus');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        // Audio handling
+        let audioContext = null;
+        let audioQueue = [];
+        let isPlayingAudio = false;
+        let nextPlayTime = 0;
+        let activeSources = []; // Track active audio sources for interruption
+        let currentResponseId = 0; // Track current response to ignore old chunks
+        let playingResponseId = null; // Which response is currently playing
+        let isFirstChunk = true; // Track first chunk for buffering
+
+        // Initialize Web Audio API
+        async function initAudioContext() {
+            try {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                console.log('Audio context initialized');
+            } catch (error) {
+                console.error('Failed to initialize audio context:', error);
+            }
+        }
+
+        // Stop all audio playback
+        function stopAllAudio() {
+            console.log('Stopping all audio playback');
+
+            // Stop all active audio sources IMMEDIATELY
+            activeSources.forEach(source => {
+                try {
+                    // Stop at time 0 (immediately) instead of default
+                    source.stop(0);
+                } catch (e) {
+                    // Source may already be stopped or not started
+                    console.log('Could not stop source:', e.message);
+                }
+            });
+            activeSources = [];
+
+            // Reset audio state
+            resetAudioTiming();
+            isPlayingAudio = false;
+            playingResponseId = null; // Clear playing response ID
+            isFirstChunk = true; // Reset first chunk flag
+            audioStatus.style.display = 'none';
+
+            console.log('All audio stopped and state reset');
+        }
+
+        // Play audio chunk immediately
+        async function playAudioChunk(base64Data) {
+            if (!audioContext) {
+                await initAudioContext();
+            }
+
+            try {
+                // Decode base64 to binary
+                const binaryString = atob(base64Data);
+                const arrayBuffer = new ArrayBuffer(binaryString.length);
+                const uint8Array = new Uint8Array(arrayBuffer);
+
+                for (let i = 0; i < binaryString.length; i++) {
+                    uint8Array[i] = binaryString.charCodeAt(i);
+                }
+
+                // Create audio buffer immediately
+                const audioBuffer = audioContext.createBuffer(1, arrayBuffer.byteLength / 2, 24000);
+                const channelData = audioBuffer.getChannelData(0);
+
+                // Convert 16-bit signed integer to float
+                for (let i = 0; i < channelData.length; i++) {
+                    const sample = (uint8Array[i * 2] | (uint8Array[i * 2 + 1] << 8));
+                    channelData[i] = sample < 32768 ? sample / 32768 : (sample - 65536) / 32768;
+                }
+
+                // Play with proper timing
+                const source = audioContext.createBufferSource();
+                source.buffer = audioBuffer;
+                source.connect(audioContext.destination);
+
+                // Schedule playback to maintain continuous audio
+                const now = audioContext.currentTime;
+
+                // Add buffer delay for first chunk to prevent crackling
+                if (isFirstChunk) {
+                    // Add 100ms buffer delay for first chunk
+                    nextPlayTime = now + 0.1;
+                    isFirstChunk = false;
+                    console.log('First chunk - adding 100ms buffer delay');
+                }
+
+                const startTime = Math.max(now, nextPlayTime);
+                source.start(startTime);
+
+                // Track this source for interruption
+                activeSources.push(source);
+
+                // Remove from active sources when it finishes
+                source.onended = () => {
+                    const index = activeSources.indexOf(source);
+                    if (index > -1) {
+                        activeSources.splice(index, 1);
+                    }
+                };
+
+                // Update next play time
+                nextPlayTime = startTime + audioBuffer.duration;
+
+                console.log(`Playing audio chunk at ${startTime}, duration: ${audioBuffer.duration}`);
+
+            } catch (error) {
+                console.error('Error processing audio chunk:', error);
+            }
+        }
+
+        // Reset audio timing
+        function resetAudioTiming() {
+            nextPlayTime = 0;
+            audioQueue = [];
+        }
+
+        // Add message to chat
+        function addMessage(content, type = 'bot') {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            messageDiv.textContent = content;
+            chatArea.appendChild(messageDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        // Add status message
+        function addStatusMessage(content, type = 'status') {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            messageDiv.textContent = content;
+            chatArea.appendChild(messageDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        // Send message
+        function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+
+            // INTERRUPTION: Stop any ongoing audio playback
+            if (isPlayingAudio) {
+                console.log('Interrupting current response');
+                stopAllAudio();
+            }
+
+            // Increment response ID for new query
+            currentResponseId++;
+            console.log(`New query - Response ID: ${currentResponseId}`);
+
+            // Add user message to chat
+            addMessage(message, 'user');
+
+            // Send to server
+            socket.emit('text_query', { text: message });
+
+            // Clear input and disable
+            messageInput.value = '';
+            messageInput.disabled = true;
+            sendButton.disabled = true;
+        }
+
+        // Socket event handlers
+        socket.on('connect', () => {
+            console.log('Connected to server');
+            connectionStatus.textContent = '✅ Connected';
+            connectionStatus.className = 'connection-status connected';
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+            connectionStatus.textContent = '❌ Disconnected';
+            connectionStatus.className = 'connection-status disconnected';
+            messageInput.disabled = true;
+            sendButton.disabled = true;
+        });
+
+        socket.on('status', (data) => {
+            console.log('Status:', data);
+            addStatusMessage(data.message);
+            messageInput.disabled = false;
+            sendButton.disabled = false;
+        });
+
+        socket.on('error', (data) => {
+            console.error('Server error:', data);
+            addStatusMessage(`Error: ${data.message}`, 'error');
+            messageInput.disabled = false;
+            sendButton.disabled = false;
+        });
+
+        socket.on('query_received', (data) => {
+            console.log('Query received:', data);
+            addStatusMessage('Processing your question...');
+        });
+
+        socket.on('text_response', (data) => {
+            console.log('Text response:', data);
+            addMessage(data.message, 'bot');
+            messageInput.disabled = false;
+            sendButton.disabled = false;
+        });
+
+        socket.on('audio_start', (data) => {
+            console.log('Audio stream starting:', data);
+
+            // Set this response as the currently playing one
+            playingResponseId = currentResponseId;
+            console.log(`Audio starting for response ID: ${playingResponseId}`);
+
+            audioStatus.textContent = '🔊 Playing audio...';
+            audioStatus.className = 'audio-status audio-playing';
+            audioStatus.style.display = 'block';
+            resetAudioTiming();
+            isPlayingAudio = true;
+            isFirstChunk = true; // Reset for new audio stream
+        });
+
+        socket.on('audio_chunk', async (data) => {
+            // Check if this chunk belongs to the current response
+            // If playingResponseId doesn't match currentResponseId, this is an old chunk
+            if (playingResponseId !== currentResponseId) {
+                console.log(`Skipping audio chunk ${data.chunk_id} - from old response (${playingResponseId} vs ${currentResponseId})`);
+                return;
+            }
+
+            // Only play if we're still in playing state (not interrupted)
+            if (!isPlayingAudio) {
+                console.log(`Skipping audio chunk ${data.chunk_id} - playback interrupted`);
+                return;
+            }
+
+            console.log(`Playing audio chunk ${data.chunk_id} for response ${playingResponseId}`);
+            // Play immediately as chunks arrive
+            await playAudioChunk(data.data);
+        });
+
+        socket.on('audio_end', (data) => {
+            console.log('Audio stream ended:', data);
+
+            // Clear status after a delay to allow audio to finish
+            setTimeout(() => {
+                audioStatus.style.display = 'none';
+                isPlayingAudio = false;
+            }, 3000);
+        });
+
+        // Handle interruption events from server
+        socket.on('response_interrupted', (data) => {
+            console.log('Response interrupted:', data);
+            stopAllAudio();
+            addStatusMessage('⚠️ Previous response interrupted', 'status');
+        });
+
+        socket.on('audio_interrupted', (data) => {
+            console.log('Audio interrupted:', data);
+            stopAllAudio();
+        });
+
+        // Event listeners
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Initialize audio context on first user interaction
+        document.addEventListener('click', () => {
+            if (!audioContext) {
+                initAudioContext();
+            }
+        });
+    </script>
+</body>
+
+</html>

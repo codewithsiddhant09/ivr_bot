@@ -1,0 +1,49 @@
+# WebSocket AI Server Requirements
+# Use this instead of requirements-grpc.txt for WebSocket communication
+
+# Core WebSocket server
+websockets>=12.0
+
+# Socket.IO server (used by server.py)
+python-socketio>=5.11.0
+
+# Async HTTP (if needed for additional endpoints)
+aiohttp>=3.9.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# AI and NLP
+openai>=1.0.0,<3.0
+langchain>=1.0.0,<2.0
+langchain-openai>=1.0.0,<2.0
+langchain-core>=1.0.0,<2.0
+langchain-text-splitters>=1.0.0,<2.0
+langchain-huggingface>=1.0.0,<2.0   # HuggingFaceEmbeddings
+
+# Vector Database
+# Pinned to 0.5.x – the 1.x Rust rewrite can't read DBs created with 0.4/0.5
+chromadb>=1.0.0,<2.0
+
+# AWS Services (for TTS if needed)
+boto3>=1.34.0
+
+# ElevenLabs TTS
+elevenlabs>=1.0.0
+
+# Database
+pymongo>=4.6.0
+redis>=5.0.0,<8.0
+
+
+# Utilities
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+sentence-transformers>=2.2.0,<6.0   # CrossEncoder for reranking
+
+# Caching
+cachetools>=5.3.0
+
+# --- Legacy (only needed if running legacy/agent.py) ---
+crewai>=1.0.0,<2.0
