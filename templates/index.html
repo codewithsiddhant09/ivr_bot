@@ -386,7 +386,7 @@
             addMessage(message, 'user');
 
             // Emit query to server
-            socket.emit('user_query', { message: message });
+            socket.emit('text_only_query', { message: message });
 
             // Clear input and disable send button
             messageInput.value = '';
@@ -425,7 +425,7 @@
             // Query acknowledgment - could add visual feedback here
         });
 
-        socket.on('bot_response', function (data) {
+        socket.on('text_response', function (data) {
             console.log('Bot response:', data);
             hideTypingIndicator();
             addMessage(data.message, 'bot');
